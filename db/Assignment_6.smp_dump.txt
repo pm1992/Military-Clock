@@ -1,0 +1,16 @@
+
+State Machine - |FullMilitary|Timer:inst2|Part_I_New:inst21|present_state
+Name present_state.Fast200x present_state.Fast60x present_state.Slow100x present_state.Slow10x present_state.Normal 
+present_state.Normal 0 0 0 0 0 
+present_state.Slow10x 0 0 0 1 1 
+present_state.Slow100x 0 0 1 0 1 
+present_state.Fast60x 0 1 0 0 1 
+present_state.Fast200x 1 0 0 0 1 
+
+State Machine - |FullMilitary|Timer:inst2|Part_I_New:inst28|present_state
+Name present_state.Fast200x present_state.Fast60x present_state.Slow100x present_state.Slow10x present_state.Normal 
+present_state.Normal 0 0 0 0 0 
+present_state.Slow10x 0 0 0 1 1 
+present_state.Slow100x 0 0 1 0 1 
+present_state.Fast60x 0 1 0 0 1 
+present_state.Fast200x 1 0 0 0 1 

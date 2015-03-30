@@ -1,0 +1,186 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.689 ns
+From           : SpeedSw
+To             : Timer:inst2|Part_I_New:inst28|present_state.Fast200x
+From Clock     : --
+To Clock       : Increment
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 51.405 ns
+From           : Timer:inst2|TwoCounter:inst2|lpm_counter:lpm_counter_component|cntr_rcj:auto_generated|safe_q[1]
+To             : display[44]
+From Clock     : Increment
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.612 ns
+From           : altera_internal_jtag~TDO
+To             : altera_reserved_tdo
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.271 ns
+From           : altera_internal_jtag~TMSUTAP
+To             : sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm|state[3]
+From Clock     : --
+To Clock       : altera_internal_jtag~TCKUTAP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'ManualCLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 44.63 MHz ( period = 22.408 ns )
+From           : Timer:inst2|FourCounter:inst29|lpm_counter:lpm_counter_component|cntr_nrj:auto_generated|safe_q[0]
+To             : Timer:inst2|FourCounter:inst29|lpm_counter:lpm_counter_component|cntr_nrj:auto_generated|safe_q[2]
+From Clock     : ManualCLK
+To Clock       : ManualCLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Time_SW[1]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 45.49 MHz ( period = 21.983 ns )
+From           : Timer:inst2|FourCounter:inst29|lpm_counter:lpm_counter_component|cntr_nrj:auto_generated|safe_q[0]
+To             : Timer:inst2|FourCounter:inst29|lpm_counter:lpm_counter_component|cntr_nrj:auto_generated|safe_q[2]
+From Clock     : Time_SW[1]
+To Clock       : Time_SW[1]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Time_SW[0]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 46.88 MHz ( period = 21.331 ns )
+From           : Timer:inst2|FourCounter:inst29|lpm_counter:lpm_counter_component|cntr_nrj:auto_generated|safe_q[0]
+To             : Timer:inst2|FourCounter:inst29|lpm_counter:lpm_counter_component|cntr_nrj:auto_generated|safe_q[2]
+From Clock     : Time_SW[0]
+To Clock       : Time_SW[0]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Enable'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 61.07 MHz ( period = 16.375 ns )
+From           : Timer:inst2|FourCounter:inst29|lpm_counter:lpm_counter_component|cntr_nrj:auto_generated|safe_q[0]
+To             : Timer:inst2|FourCounter:inst29|lpm_counter:lpm_counter_component|cntr_nrj:auto_generated|safe_q[2]
+From Clock     : Enable
+To Clock       : Enable
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Increment'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 68.18 MHz ( period = 14.668 ns )
+From           : Timer:inst2|FourCounter:inst29|lpm_counter:lpm_counter_component|cntr_nrj:auto_generated|safe_q[0]
+To             : Timer:inst2|FourCounter:inst29|lpm_counter:lpm_counter_component|cntr_nrj:auto_generated|safe_q[2]
+From Clock     : Increment
+To Clock       : Increment
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Clock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 73.41 MHz ( period = 13.622 ns )
+From           : Timer:inst2|FourCounter:inst29|lpm_counter:lpm_counter_component|cntr_nrj:auto_generated|safe_q[0]
+To             : Timer:inst2|FourCounter:inst29|lpm_counter:lpm_counter_component|cntr_nrj:auto_generated|safe_q[2]
+From Clock     : Clock
+To Clock       : Clock
+Failed Paths   : 0
+
+Type           : Clock Setup: 'altera_internal_jtag~TCKUTAP'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 185.25 MHz ( period = 5.398 ns )
+From           : sld_hub:auto_hub|irsr_reg[1]
+To             : sld_hub:auto_hub|tdo
+From Clock     : altera_internal_jtag~TCKUTAP
+To Clock       : altera_internal_jtag~TCKUTAP
+Failed Paths   : 0
+
+Type           : Clock Hold: 'ManualCLK'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Timer:inst2|TwoCounter:inst2|lpm_counter:lpm_counter_component|cntr_rcj:auto_generated|safe_q[0]
+To             : Timer:inst2|TwoCounter:inst2|lpm_counter:lpm_counter_component|cntr_rcj:auto_generated|safe_q[0]
+From Clock     : ManualCLK
+To Clock       : ManualCLK
+Failed Paths   : 112
+
+Type           : Clock Hold: 'Time_SW[1]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Timer:inst2|TwoCounter:inst2|lpm_counter:lpm_counter_component|cntr_rcj:auto_generated|safe_q[0]
+To             : Timer:inst2|TwoCounter:inst2|lpm_counter:lpm_counter_component|cntr_rcj:auto_generated|safe_q[0]
+From Clock     : Time_SW[1]
+To Clock       : Time_SW[1]
+Failed Paths   : 116
+
+Type           : Clock Hold: 'Time_SW[0]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Timer:inst2|TwoCounter:inst2|lpm_counter:lpm_counter_component|cntr_rcj:auto_generated|safe_q[0]
+To             : Timer:inst2|TwoCounter:inst2|lpm_counter:lpm_counter_component|cntr_rcj:auto_generated|safe_q[0]
+From Clock     : Time_SW[0]
+To Clock       : Time_SW[0]
+Failed Paths   : 116
+
+Type           : Clock Hold: 'Enable'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Timer:inst2|TwoCounter:inst2|lpm_counter:lpm_counter_component|cntr_rcj:auto_generated|safe_q[0]
+To             : Timer:inst2|TwoCounter:inst2|lpm_counter:lpm_counter_component|cntr_rcj:auto_generated|safe_q[0]
+From Clock     : Enable
+To Clock       : Enable
+Failed Paths   : 144
+
+Type           : Clock Hold: 'Increment'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Timer:inst2|TwoCounter:inst2|lpm_counter:lpm_counter_component|cntr_rcj:auto_generated|safe_q[0]
+To             : Timer:inst2|TwoCounter:inst2|lpm_counter:lpm_counter_component|cntr_rcj:auto_generated|safe_q[0]
+From Clock     : Increment
+To Clock       : Increment
+Failed Paths   : 176
+
+Type           : Clock Hold: 'Clock'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Timer:inst2|TwoCounter:inst2|lpm_counter:lpm_counter_component|cntr_rcj:auto_generated|safe_q[0]
+To             : Timer:inst2|TwoCounter:inst2|lpm_counter:lpm_counter_component|cntr_rcj:auto_generated|safe_q[0]
+From Clock     : Clock
+To Clock       : Clock
+Failed Paths   : 176
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 840
+
+--------------------------------------------------------------------------------------
+

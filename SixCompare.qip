@@ -1,0 +1,7 @@
+set_global_assignment -name IP_TOOL_NAME "LPM_COMPARE"
+set_global_assignment -name IP_TOOL_VERSION "9.0"
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "SixCompare.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "SixCompare.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "SixCompare_inst.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "SixCompare.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "SixCompare.cmp"]

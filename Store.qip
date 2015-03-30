@@ -1,0 +1,7 @@
+set_global_assignment -name IP_TOOL_NAME "LPM_FF"
+set_global_assignment -name IP_TOOL_VERSION "9.1"
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "Store.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "Store.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "Store_inst.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "Store.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "Store.cmp"]

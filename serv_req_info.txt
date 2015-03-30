@@ -1,0 +1,34 @@
+<internal_error>
+	<executable>quartus_map</executable>
+	<sub_system>AMERGE</sub_system>
+	<file>/quartus/atm/amerge/amerge_kpt_op.cpp</file>
+	<line>220</line>
+	<callstack>
+	0xffffffffacbf63c0: atm_amerge + 0x343c0 (_ZN13AMERGE_KPT_OP4workEv + 0x1340)
+	0xffffffffacc256d3: atm_amerge + 0x636d3 (_ZN16AMERGE_MERGER_OP29perform_post_merge_operationsEv + 0xa4f)
+	0xffffffffacc35589: atm_amerge + 0x73589 (_Z22amerge_combine_netlistP10CMP_FACADEbPb + 0x16b)
+	0xffffffffacc358c9: atm_amerge + 0x738c9 (amerge_mini_merge + 0x2b)
+	0x08069e1a: quartus_map + 0x21e1a (_ZN14QSYN_FRAMEWORK13do_mini_mergeEP10CMP_FACADE + 0x34a)
+	0x0807103c: quartus_map + 0x2903c (_ZN14QSYN_FRAMEWORK19write_qic_databasesEb + 0x7bc)
+	0x08071e02: quartus_map + 0x29e02 (_ZN14QSYN_FRAMEWORK15write_databasesEb + 0xd2)
+	0xffffffffb3f8a1b2: comp_qexe + 0xb1b2 (_Z14qexe_do_normalP14QEXE_FRAMEWORKPKc + 0x32e)
+	0xffffffffb3f95fa6: comp_qexe + 0x16fa6 (_Z18qexe_standard_mainP14QEXE_FRAMEWORKPPK22QEXE_OPTION_DEFINITIONiPPKc + 0x330)
+	0x08066b31: quartus_map + 0x1eb31 (_Z9qsyn_mainiPPKc + 0x71)
+	0xffffffffaf3d61d6: ccl_msg + 0x1c1d6 (_Z15msg_main_threadPv + 0x16)
+	0xffffffffaf193cd8: ccl_thr + 0x4cd8 (thr_final_wrapper + 0xe)
+	0xffffffffaf3d7b02: ccl_msg + 0x1db02 (_Z18msg_thread_wrapperPFPvS_ES_ + 0x72)
+	0x0809be12: quartus_map + 0x53e12 (_Z18mem_thread_wrapperPFPvS_ES_ + 0xd2)
+	0xffffffffaf1bd1c7: ccl_err + 0x61c7 (_Z18err_thread_wrapperPFPvS_ES_ + 0x29)
+	0xffffffffaf193d05: ccl_thr + 0x4d05 (thr_thread_wrapper + 0x29)
+	0xffffffffaf3e99d6: ccl_msg + 0x2f9d6 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0x9e)
+	0x08059cef: quartus_map + 0x11cef (main + 0x4f)
+	0x0039fce6: c.so.6 + 0x16ce6 (__libc_start_main + 0xe6)
+	0x080599d1: quartus_map + 0x119d1
+	</callstack>
+	<error>cmp_merge_kpt_db</error>
+	<date>Fri Mar 28 12:33:19 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version</version>
+	<full_error>cmp_merge_kpt_db
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version </full_error>
+</internal_error>
+

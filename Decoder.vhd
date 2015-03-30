@@ -1,0 +1,46 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.all;
+USE IEEE.STD_LOGIC_ARITH.all;
+USE IEEE.STD_LOGIC_UNSIGNED.all;
+-- Hexadecimal to 7 Segment Decoder for LED Display
+
+ENTITY Decoder IS
+PORT( hex_digit : IN STD_LOGIC_Vector(1 downto 0);
+reset : IN std_logic; 
+segment_a, segment_b, segment_c, segment_d : OUT std_logic);
+END Decoder;
+ARCHITECTURE a OF Decoder IS
+SIGNAL segment_data : STD_LOGIC_VECTOR(3 DOWNTO 0);
+BEGIN
+PROCESS (Hex_digit)
+-- HEX to 7 Segment Decoder for LED Display
+BEGIN -- Hex-digit is the four bit binary value to display
+CASE Hex_digit IS
+	WHEN "00" =>
+		segment_data <= "0001"; --A
+	WHEN "01" =>
+		segment_data <= "0010"; --B
+	WHEN "10" =>
+		segment_data <= "0100"; --C
+	WHEN "11" =>
+		segment_data <= "1000"; --D
+	
+		
+			
+		
+	
+	
+
+
+WHEN OTHERS =>
+segment_data <= "0000";
+
+END CASE;
+END PROCESS;
+-- extract segment data bits and invert
+-- LED driver circuit is inverted
+segment_d <= segment_data(3);
+segment_c <= segment_data(2);
+segment_b <= segment_data(1);
+segment_a <= segment_data(0);
+END a;
